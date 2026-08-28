@@ -14,8 +14,8 @@ namespace JAFleet.Commons.EF
         public string? MessageType { get; set; }
         [Column("sender")]
         public string? Sender { get; set; }
-        [Column("replay_to")]
-        public string? ReplayTo { get; set; }
+        [Column("reply_to")]
+        public string? ReplyTo { get; set; }
         [Column("message")]
         public string? MessageDetail { get; set; }
         [Column("recieve_date")]

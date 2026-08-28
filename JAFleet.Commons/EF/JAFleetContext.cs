@@ -17,7 +17,7 @@ namespace JAFleet.Commons.EF
         public virtual DbSet<SearchCondition> SearchConditions { get; set; }
         public virtual DbSet<DailyStatistics> DailyStatistics { get; set; }
         public virtual DbSet<TypeDetailView> TypeDetailViews { get; set; }
-        public virtual DbSet<Message> Messagess { get; set; }
+        public virtual DbSet<Message> Messages { get; set; }
         public virtual DbSet<AircraftHistory> AircraftHistories { get; set; }
         public virtual DbSet<AircraftHistoryView> AircraftHistoryViews { get; set; }
         public virtual DbSet<AircraftPhoto> AircraftPhotos { get; set; }
