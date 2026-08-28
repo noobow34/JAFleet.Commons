@@ -21,7 +21,7 @@ namespace JAFleet.Commons.EF
         public virtual DbSet<AircraftHistory> AircraftHistories { get; set; }
         public virtual DbSet<AircraftHistoryView> AircraftHistoryViews { get; set; }
         public virtual DbSet<AircraftPhoto> AircraftPhotos { get; set; }
-        public virtual DbSet<SeatConfiguration> SeatConfigrations { get; set; }
+        public virtual DbSet<SeatConfiguration> SeatConfigurations { get; set; }
         public virtual DbSet<WorkingStatus> WorkingStatuses { get; set; }
         public virtual DbSet<AccessLog> AccessLogs { get; set; }
         public virtual DbSet<AppInfo> AppInfos { get; set; }
