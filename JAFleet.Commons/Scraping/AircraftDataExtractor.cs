@@ -6,7 +6,7 @@ using JAFleet.Commons.Dto;
 using JAFleet.Commons.EF;
 using System.Text.RegularExpressions;
 
-namespace JAFleet.Commons.Aircraft
+namespace JAFleet.Commons.Scraping
 {
     public static class AircraftDataExtractor
     {

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using JAFleet.Commons.Util;
 
 namespace JAFleet.Commons.EF
 {

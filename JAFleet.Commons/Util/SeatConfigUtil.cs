@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace JAFleet.Commons
+namespace JAFleet.Commons.Util
 {
     public static class SeatConfigUtil
     {
