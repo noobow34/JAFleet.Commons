@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using JAFleet.Commons.Util;
 
-namespace JAFleet.Commons.EF
+namespace JAFleet.Commons.Data
 {
     [Table("seat_configuration")]
     public class SeatConfiguration

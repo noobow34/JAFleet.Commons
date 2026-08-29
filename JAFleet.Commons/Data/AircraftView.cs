@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace JAFleet.Commons.EF
+namespace JAFleet.Commons.Data
 {
     [Keyless]
     [Table("aircraft_view")]

@@ -3,7 +3,7 @@ using AngleSharp.Dom;
 using AngleSharp.Html.Dom;
 using AngleSharp.XPath;
 using JAFleet.Commons.Dto;
-using JAFleet.Commons.EF;
+using JAFleet.Commons.Data;
 using System.Text.RegularExpressions;
 
 namespace JAFleet.Commons.Scraping

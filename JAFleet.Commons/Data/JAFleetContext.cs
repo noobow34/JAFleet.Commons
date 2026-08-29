@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace JAFleet.Commons.EF
+namespace JAFleet.Commons.Data
 {
     public partial class JAFleetContext : DbContext
     {

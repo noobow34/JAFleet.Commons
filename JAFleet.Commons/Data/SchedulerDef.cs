@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace JAFleet.Commons.EF;
+namespace JAFleet.Commons.Data;
 
 [Table("scheduler_def")]
 public partial class SchedulerDef

@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace JAFleet.Commons.EF
+namespace JAFleet.Commons.Data
 {
     /// <summary>
     /// 航空局Excel取込の一時保存。復号済みのxlsxそのものと、レジごとの編集内容を持つ。
