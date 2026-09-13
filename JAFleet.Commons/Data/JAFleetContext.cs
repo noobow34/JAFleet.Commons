@@ -24,7 +24,6 @@ namespace JAFleet.Commons.Data
         public virtual DbSet<SeatConfiguration> SeatConfigurations { get; set; }
         public virtual DbSet<WorkingStatus> WorkingStatuses { get; set; }
         public virtual DbSet<AccessLog> AccessLogs { get; set; }
-        public virtual DbSet<AppInfo> AppInfos { get; set; }
         public virtual DbSet<SchedulerDef> SchedulerDefs { get; set; }
         public virtual DbSet<JcabImportSession> JcabImportSessions { get; set; }
 
