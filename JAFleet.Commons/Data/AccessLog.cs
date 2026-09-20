@@ -33,6 +33,20 @@ namespace JAFleet.Commons.Data
         public int? ResponseCode { get; set; }
         [Column("is_admin")]
         public bool? IsAdmin { get; set; }
+        /// <summary>
+        /// 訪問者識別用のCookie（署名付き）から取り出した値。
+        /// クライアントが送ってきて検証に通ったときだけ入る。
+        /// Cookieを持ち回らないクライアント（多くのボット）ではnullのまま。
+        /// </summary>
+        [Column("visitor_id")]
+        public string? VisitorId { get; set; }
+        /// <summary>
+        /// MVCのルートから取れた "コントローラー名/アクション名"。
+        /// 静的ファイルやルートに当たらなかったリクエストではnullになるため、
+        /// 「普通のページへのアクセスか」の判定に使える。
+        /// </summary>
+        [Column("route_key")]
+        public string? RouteKey { get; set; }
 
     }
 }
