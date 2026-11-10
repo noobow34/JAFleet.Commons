@@ -31,6 +31,14 @@ namespace JAFleet.Commons.Data
         [Column("overrides_json")]
         public string OverridesJson { get; set; } = "{}";
 
+        /// <summary>
+        /// Gmailから取り込んだ場合のメッセージID。アップロードから作った一時保存はnull。
+        /// 同じメールから一時保存を二重に作らないための印で、取込画面のメール一覧に
+        /// 「作業中」と出して再開へ誘導するのに使う。
+        /// </summary>
+        [Column("gmail_message_id")]
+        public string? GmailMessageId { get; set; }
+
         [Column("created_at")]
         public DateTime CreatedAt { get; set; }
 
