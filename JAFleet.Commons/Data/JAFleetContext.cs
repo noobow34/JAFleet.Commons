@@ -26,6 +26,8 @@ namespace JAFleet.Commons.Data
         public virtual DbSet<AccessLog> AccessLogs { get; set; }
         public virtual DbSet<SchedulerDef> SchedulerDefs { get; set; }
         public virtual DbSet<JcabImportSession> JcabImportSessions { get; set; }
+        public virtual DbSet<LiveryNews> LiveryNewsList { get; set; }
+        public virtual DbSet<LiveryNewsCandidate> LiveryNewsCandidates { get; set; }
 
         public JAFleetContext(DbContextOptions<JAFleetContext> options) : base(options) => AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
