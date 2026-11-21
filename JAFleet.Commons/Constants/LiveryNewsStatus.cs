@@ -18,6 +18,9 @@ namespace JAFleet.Commons.Constants
         /// <summary>登録済みの特別塗装と同じ内容だったため、作った時点で処理済みにした</summary>
         public const string NO_DIFF = "3";
 
+        /// <summary>承認したが運航開始日が先なので、aircraft_reservationへ予約した（その日に日次ジョブが反映する）</summary>
+        public const string RESERVED = "4";
+
         public static string GetName(string? status)
         {
             return status switch
@@ -26,6 +29,7 @@ namespace JAFleet.Commons.Constants
                 APPROVED => "承認",
                 REJECTED => "却下",
                 NO_DIFF => "差分なし",
+                RESERVED => "予約",
                 _ => status ?? string.Empty,
             };
         }

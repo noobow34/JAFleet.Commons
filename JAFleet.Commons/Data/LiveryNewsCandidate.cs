@@ -38,6 +38,13 @@ namespace JAFleet.Commons.Data
         [Column("applied_livery")]
         public string? AppliedLivery { get; set; }
 
+        /// <summary>
+        /// 記事から読んだ特別塗装機の運航開始日。書かれていなければnull（画面で入れられる）。
+        /// 承認した時点で未来の日付なら、すぐには反映せずaircraft_reservationへ予約する。
+        /// </summary>
+        [Column("start_date")]
+        public DateTime? StartDate { get; set; }
+
         [Column("created_at")]
         public DateTime CreatedAt { get; set; }
 
