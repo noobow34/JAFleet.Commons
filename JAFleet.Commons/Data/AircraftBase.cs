@@ -14,7 +14,11 @@ namespace JAFleet.Commons.Data
         public string? RegistrationNumber { get; set; }
         [Display(Name = "登録年月日")]
         [Column("register_date")]
-        public string? RegisterDate { get; set; }
+        public DateOnly? RegisterDate { get; set; }
+
+        [Display(Name = "抹消年月日")]
+        [Column("deregister_date")]
+        public DateOnly? DeregisterDate { get; set; }
         [Display(Name = "運用状況")]
         [Column("operation_code")]
         public string? OperationCode { get; set; }

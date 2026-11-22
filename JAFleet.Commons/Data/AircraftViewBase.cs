@@ -41,9 +41,13 @@ namespace JAFleet.Commons.Data
         public int SerialNumberChanged { get; set; } = 0;
 
         [Column("register_date")]
-        public string? RegisterDate { get; set; }
+        public DateOnly? RegisterDate { get; set; }
         [NotMapped]
         public int RegisterDateChanged { get; set; } = 0;
+        [Column("deregister_date")]
+        public DateOnly? DeregisterDate { get; set; }
+        [NotMapped]
+        public int DeregisterDateChanged { get; set; } = 0;
 
         [Column("wifi_code")]
         public string? WifiCode { get; set; }
@@ -135,6 +139,7 @@ namespace JAFleet.Commons.Data
             this.TypeDetailChanged = this.TypeDetailCode != compareTarget.TypeDetailCode ? 1 : 0;
             this.SerialNumberChanged = this.SerialNumber != compareTarget.SerialNumber ? 1 : 0;
             this.RegisterDateChanged = this.RegisterDate != compareTarget.RegisterDate ? 1 : 0;
+            this.DeregisterDateChanged = this.DeregisterDate != compareTarget.DeregisterDate ? 1 : 0;
             this.OperationChanged = this.OperationCode != compareTarget.OperationCode ? 1 : 0;
             this.WifiChanged = this.WifiCode != compareTarget.WifiCode ? 1 : 0;
             this.RemarksChanged = this.Remarks != compareTarget.Remarks ? 1 : 0;
