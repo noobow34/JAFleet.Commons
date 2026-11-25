@@ -34,6 +34,7 @@ namespace JAFleet.Commons.Data
         public virtual DbSet<Airport> Airports { get; set; }
         public virtual DbSet<AdsbFlight> AdsbFlights { get; set; }
         public virtual DbSet<AircraftReservation> AircraftReservations { get; set; }
+        public virtual DbSet<InventoryCheck> InventoryChecks { get; set; }
 
         public JAFleetContext(DbContextOptions<JAFleetContext> options) : base(options) => AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
